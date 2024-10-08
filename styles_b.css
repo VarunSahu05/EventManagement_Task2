@@ -1,0 +1,125 @@
+/* About Us Section */
+.bg-cont{
+    background-image: url('https://image.freepik.com/free-vector/luxury-black-background-banner-illustration-with-gold-strip-art-deco-line-elegant_25989-204.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 30px;
+}
+.head{
+    color: #a29f04;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.about-us {
+    padding: 20px;
+    text-align: center;
+    background-color: none;
+}
+
+.about-us h2 {
+    font-size: 26px;
+    color: #f4f1f1;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #f7f5f5;
+    margin-bottom: 30px;
+}
+
+/* Team Section */
+.team {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #f4eeee;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #f0f0f0;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    background-color:#333;}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #c4c105;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.image {
+    text-align: center; /* or flex-start, flex-end */
+    margin: 0 auto;
+    display: block;
+
+  }
+
+/* Styles for medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        margin: 10px;
+        width: calc(50% - 20px);
+    }
+}
+
+/* Styles for small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .head {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        margin: 5px;
+        width: 100%;
+    }
+}

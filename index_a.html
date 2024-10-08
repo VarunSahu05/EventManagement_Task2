@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles_a.css">
+</head>
+<body>
+    <div class="bg-cont">
+        <h1 class="heading">Event Registration Form</h1>
+        <form id="registrationForm"  class="bg-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="nameError" class="error-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error-message"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span id="phoneError" class="error-message"></span>
+
+            <label for="eventId">Event Registration ID:</label>
+            <input type="text" id="eventId" name="eventId" placeholder="Don't Fill" readonly>
+            <span id="eventIdError" class="error-message"></span>
+
+            <button type="submit">Register</button>
+
+            <div id="success-message" style="display: none;">
+                <div class="spinner"></div>
+                <p>Successfully registered! Redirecting to event page...</p>
+            </div>
+
+        </form>
+    </div>
+    <script src="script_a.js"></script>
+</body>
+</html>

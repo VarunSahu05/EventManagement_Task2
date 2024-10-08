@@ -1,0 +1,146 @@
+/* Styling the event details section */
+.bg-cont{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/845/815/non_2x/elegant-golden-scene-diagonal-glowing-with-lighting-effect-sparkle-on-black-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 50px
+}
+.event-details {
+    padding: 10px;
+    text-align: center;
+    background-color: none;
+}
+.head{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+
+.event-schedule {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.event {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 200px;
+    background-color: rgb(164, 81, 32);
+}
+
+.event h3 {
+    font-size: 20px;
+    color: #f9f4f4;
+}
+h2{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.event p {
+    font-size: 16px;
+    color: #f8f0f0;
+}
+.p{
+    font-size: 14px;
+    color: #f8f0f0;
+}
+button{
+    background-color: #b34505;
+    color: #ffffff;
+    padding: 5px;;
+    margin-left: 20px;
+}
+.todo-list {
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top:10px;
+}
+
+.todo-list li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #fb9527;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .bg-cont {
+        padding: 20px;
+    }
+
+    .todo-list h2 {
+        font-size: 20px;
+    }
+
+    #taskInput {
+        height: 35px;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .event {
+        flex-basis: 50%;
+    }
+    .event-schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Styles for small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .bg-cont {
+        padding: 15px;
+    }
+
+    .todo-list h2 {
+        font-size: 18px;
+    }
+
+    #taskInput {
+        height: 30px;
+        padding: 6px;
+        font-size: 14px;
+    }
+    .event {
+        flex-basis: 100%;
+    }
+    .event-schedule {
+        grid-template-columns: 1fr;
+    }
+}

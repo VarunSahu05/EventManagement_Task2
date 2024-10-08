@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management - Events</title>
+    <link rel="stylesheet" href="styles_e.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index_a.html">Form</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="bg-cont">
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <div class="event-header">
+            <h1 class="head">Upcoming Events</h1>
+            <p class="p">Check out our latest events below!</p>
+        </div>
+        <div class="event-schedule">
+            <div class="event">
+                <h3>Event 1</h3>
+                <p>Date: 12th Oct</p>
+            </div>
+            <div class="event">
+                <h3>Event 2</h3>
+                <p>Date: 15th Oct</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="todo-list">
+        <h2>Event Organizer's To-Do List</h2>
+        <textarea id="taskInput" rows="2" cols="30" placeholder="Enter a task"></textarea>
+        <!--input type="text" id="taskInput" placeholder="Enter a task"-->
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </section>
+</div>
+    <script src="script_e.js"></script>
+</body>
+</html>
